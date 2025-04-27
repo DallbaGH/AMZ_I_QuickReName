@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <title>图片上传与重命名</title>
+    <title>QuRName-极速改名</title>
     <style>
         /* 全局样式 */
         body {
@@ -152,51 +152,51 @@
 
 <body>
     <div class="container">
-        <h1>套图改名</h1>
+        <h1>QuRName-极速改名</h1>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
             <div class="dropzone" id="main-dropzone">
                 <label for="main-image" class="block text-sm font-medium text-gray-700">主图</label>
                 <input type="file" id="main-image" multiple>
-                <p class="text-gray-500 mt-2">点击或拖放图片</p>
+                <p class="text-gray-500 mt-2">点击选择或拖入图片</p>
                 <div class="file-list" id="main-file-list"></div>
             </div>
             <div class="dropzone" id="additional-dropzone">
                 <label for="additional-image" class="block text-sm font-medium text-gray-700">附图</label>
                 <input type="file" id="additional-image" multiple>
-                <p class="text-gray-500 mt-2">点击或拖放图片</p>
+                <p class="text-gray-500 mt-2">点击选择或拖入图片</p>
                 <div class="file-list" id="additional-file-list"></div>
             </div>
             <div class="dropzone" id="mobile-dropzone">
                 <label for="mobile-a-plus" class="block text-sm font-medium text-gray-700">手机端A+</label>
                 <input type="file" id="mobile-a-plus" multiple>
-                <p class="text-gray-500 mt-2">点击或拖放图片</p>
+                <p class="text-gray-500 mt-2">点击选择或拖入图片</p>
                 <div class="file-list" id="mobile-file-list"></div>
             </div>
             <div class="dropzone" id="desktop-dropzone">
                 <label for="desktop-a-plus" class="block text-sm font-medium text-gray-700">桌面端A+</label>
                 <input type="file" id="desktop-a-plus" multiple>
-                <p class="text-gray-500 mt-2">点击或拖放图片</p>
+                <p class="text-gray-500 mt-2">点击选择或拖入图片</p>
                 <div class="file-list" id="desktop-file-list"></div>
             </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
             <div class="flex-input">
-                <label for="main-rename" class="block text-sm font-medium text-gray-700">主图标准命名</label>
+                <label for="main-rename" class="block text-sm font-medium text-gray-700">主图_标准命名</label>
                 <input type="text" id="main-rename" value="1_Main_" class="border border-gray-300 rounded px-3 py-2 w-full" disabled>
                 <button onclick="toggleEdit('main-rename', this)">修改</button>
             </div>
             <div class="flex-input">
-                <label for="additional-rename" class="block text-sm font-medium text-gray-700">附图标准命名</label>
+                <label for="additional-rename" class="block text-sm font-medium text-gray-700">附图_标准命名</label>
                 <input type="text" id="additional-rename" value="2_Add_" class="border border-gray-300 rounded px-3 py-2 w-full" disabled>
                 <button onclick="toggleEdit('additional-rename', this)">修改</button>
             </div>
             <div class="flex-input">
-                <label for="mobile-rename" class="block text-sm font-medium text-gray-700">手机端A+标准命名</label>
+                <label for="mobile-rename" class="block text-sm font-medium text-gray-700">手机A+_标准命名</label>
                 <input type="text" id="mobile-rename" value="3_MA_" class="border border-gray-300 rounded px-3 py-2 w-full" disabled>
                 <button onclick="toggleEdit('mobile-rename', this)">修改</button>
             </div>
             <div class="flex-input">
-                <label for="desktop-rename" class="block text-sm font-medium text-gray-700">桌面端A+标准命名</label>
+                <label for="desktop-rename" class="block text-sm font-medium text-gray-700">PCA+_标准命名</label>
                 <input type="text" id="desktop-rename" value="4_DA_" class="border border-gray-300 rounded px-3 py-2 w-full" disabled>
                 <button onclick="toggleEdit('desktop-rename', this)">修改</button>
             </div>
